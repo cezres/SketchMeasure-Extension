@@ -1,9 +1,16 @@
+function fontFamily(font) {
+    var fontFamilyElement = document.getElementById("font-family")
+    if (fontFamilyElement != null) {
+        var fontFamily = fontFamilyElement.value.split("-")[1]
+        return font + "-" + fontFamily
+    }
+	else {
+        return font
+    }
+}
+
 
 document.addEventListener("click", function() {
-    
-    // var title = document.title
-    // alert(title)
-    // alert("测试")
 
     var obj = document.getElementById("inspector")
         if (obj != null) {
@@ -12,19 +19,19 @@ document.addEventListener("click", function() {
             for(var i = 0,inp; inp = inps[i++];) {
                 // 字体
                 if (inp.value == "17px") {
-                    inp.value = "T1"
+                    inp.value = fontFamily("T1")
                 }
                 else if (inp.value == "16px") {
-                    inp.value = "T2"
+                    inp.value = fontFamily("T2")
                 }
                 else if (inp.value == "14px") {
-                    inp.value = "T3"
+                    inp.value = fontFamily("T3")
                 }
                 else if (inp.value == "12px") {
-                    inp.value = "T4"
+                    inp.value = fontFamily("T4")
                 }
                 else if (inp.value == "11px") {
-                    inp.value = "T5"
+                    inp.value = fontFamily("T5")
                 }
                 // 主色
                 else if (inp.value == "#FF4338 100%") {
