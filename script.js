@@ -1,3 +1,5 @@
+// 1.0
+
 function fontFamily(font) {
     var fontFamilyElement = document.getElementById("font-family")
     if (fontFamilyElement != null) {
