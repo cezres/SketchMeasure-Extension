@@ -4,7 +4,8 @@ function fontFamily(font) {
     var fontFamilyElement = document.getElementById("font-family")
     if (fontFamilyElement != null) {
         var fontFamily = fontFamilyElement.value.split("-")[1]
-        return font + "-" + fontFamily
+        fontFamilyElement.value = font + "-" + fontFamily
+        return fontFamilyElement.value
     }
 	else {
         return font
