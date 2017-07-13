@@ -1,4 +1,4 @@
-// 1.0
+// 1.0.1
 
 function fontFamily(font) {
     var fontFamilyElement = document.getElementById("font-family")
